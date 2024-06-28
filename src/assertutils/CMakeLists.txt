@@ -8,3 +8,8 @@ add_library(assertutils SHARED
 
 target_include_directories(assertutils PUBLIC "${assertutils_SOURCE_DIR}/include/assertutils")
 
+install(TARGETS assertutils
+	LIBRARY DESTINATION lib/assertutils
+	PUBLIC_HEADER DESTINATION include/assertutils
+)
+
